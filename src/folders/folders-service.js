@@ -13,7 +13,6 @@ const FoldersService = {
   },
 
   insertFolder(knex, folder) {
-    console.log('in folders-service folder is ', folder);
     return knex
       .insert(folder)
       .into('folders')
